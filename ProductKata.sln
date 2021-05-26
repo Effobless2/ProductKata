@@ -3,20 +3,18 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31205.134
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductKata", "ProductKata\ProductKata.csproj", "{D9F89C5B-5726-4215-BCC9-57CF9E76E157}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductKata.Domain", "ProductKata.Domain\ProductKata.Domain.csproj", "{68484169-CA6C-47F2-97F0-F1DC5B984ACE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductKata.Domain", "ProductKata.Domain\ProductKata.Domain.csproj", "{68484169-CA6C-47F2-97F0-F1DC5B984ACE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductKata.DB", "ProductKata.DB\ProductKata.DB.csproj", "{795C54B7-D13B-449F-929B-2A6367F437FB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductKata.DB", "ProductKata.DB\ProductKata.DB.csproj", "{795C54B7-D13B-449F-929B-2A6367F437FB}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductKata.Api", "ProductKata.Api\ProductKata.Api.csproj", "{6A89AB75-9041-45DB-9F3E-2732971829F5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductKata.Api", "ProductKata.Api\ProductKata.Api.csproj", "{6A89AB75-9041-45DB-9F3E-2732971829F5}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{BB488087-7392-451E-8860-9B945649C602}"
 	ProjectSection(SolutionItems) = preProject
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductKata.UnitTests", "ProductKata.UnitTests\ProductKata.UnitTests.csproj", "{8AAF0FB1-3C27-4CA2-BAEC-F52CBEE7167E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductKata.UnitTests", "ProductKata.UnitTests\ProductKata.UnitTests.csproj", "{8AAF0FB1-3C27-4CA2-BAEC-F52CBEE7167E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -24,10 +22,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{D9F89C5B-5726-4215-BCC9-57CF9E76E157}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D9F89C5B-5726-4215-BCC9-57CF9E76E157}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D9F89C5B-5726-4215-BCC9-57CF9E76E157}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D9F89C5B-5726-4215-BCC9-57CF9E76E157}.Release|Any CPU.Build.0 = Release|Any CPU
 		{68484169-CA6C-47F2-97F0-F1DC5B984ACE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{68484169-CA6C-47F2-97F0-F1DC5B984ACE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{68484169-CA6C-47F2-97F0-F1DC5B984ACE}.Release|Any CPU.ActiveCfg = Release|Any CPU
