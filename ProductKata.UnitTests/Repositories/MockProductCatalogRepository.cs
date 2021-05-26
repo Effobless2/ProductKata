@@ -3,16 +3,18 @@ using ProductKata.Domain.Repository;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 using System.Threading.Tasks;
 
-namespace ProductKata.DB
+namespace ProductKata.UnitTests.Repositories
 {
-    public class ProductCatalogRepository : IProductCatalogRepository
+    public class MockProductCatalogRepository : IProductCatalogRepository
     {
-        private static List<ProductCatalog> database = new();
+        private List<ProductCatalog> database = new();
         public Task<int> Add(ProductCatalog item)
         {
-            throw new NotImplementedException();
+            database.Add(item);
+            return Task.FromResult(database.Count);
         }
 
         public Task<ProductCatalog> Get(int id)

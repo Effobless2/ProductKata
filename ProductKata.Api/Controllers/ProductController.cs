@@ -21,7 +21,14 @@ namespace ProductKata.Api.Controllers
         }
 
         [HttpGet("{id}")]
-        public async Task<ActionResult<ProductPrice>> Get(int id, [FromBody] string login)
+        public async Task<ActionResult<ProductPrice>> Get(int id)
+        {
+            ProductPrice result = await productService.GetById(id);
+            return result != null ? Ok(result) : BadRequest();
+        }
+
+        [HttpGet("{id}/{login}")]
+        public async Task<ActionResult<ProductPrice>> Get(int id, string login)
         {
             ProductPrice result = await productService.GetById(id, login);
             return result != null ? Ok(result) : BadRequest();

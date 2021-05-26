@@ -6,14 +6,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ProductKata.DB
+namespace ProductKata.UnitTests.Repositories
 {
-    public class SellHistoryRepository : ISellHistoryRepository
+    public class MockSellHistoryRepository : ISellHistoryRepository
     {
         private static List<SellHistory> database = new();
         public Task<int> Add(SellHistory item)
         {
-            throw new NotImplementedException();
+            database.Add(item);
+            return Task.FromResult(database.Count);
         }
 
         public Task<SellHistory> Get(int id)

@@ -11,12 +11,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductKata.DB", "ProductKa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductKata.Api", "ProductKata.Api\ProductKata.Api.csproj", "{6A89AB75-9041-45DB-9F3E-2732971829F5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductKata.UnitTests", "ProductKata.UnitTests\ProductKata.UnitTests.csproj", "{03BAE11F-945B-4E47-A70E-AEABF50B2741}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{BB488087-7392-451E-8860-9B945649C602}"
 	ProjectSection(SolutionItems) = preProject
 		README.md = README.md
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductKata.UnitTests", "ProductKata.UnitTests\ProductKata.UnitTests.csproj", "{8AAF0FB1-3C27-4CA2-BAEC-F52CBEE7167E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -40,10 +40,10 @@ Global
 		{6A89AB75-9041-45DB-9F3E-2732971829F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6A89AB75-9041-45DB-9F3E-2732971829F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6A89AB75-9041-45DB-9F3E-2732971829F5}.Release|Any CPU.Build.0 = Release|Any CPU
-		{03BAE11F-945B-4E47-A70E-AEABF50B2741}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{03BAE11F-945B-4E47-A70E-AEABF50B2741}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{03BAE11F-945B-4E47-A70E-AEABF50B2741}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{03BAE11F-945B-4E47-A70E-AEABF50B2741}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8AAF0FB1-3C27-4CA2-BAEC-F52CBEE7167E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8AAF0FB1-3C27-4CA2-BAEC-F52CBEE7167E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8AAF0FB1-3C27-4CA2-BAEC-F52CBEE7167E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8AAF0FB1-3C27-4CA2-BAEC-F52CBEE7167E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -6,11 +6,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ProductKata.DB
+namespace ProductKata.UnitTests.Repositories
 {
-    public class PriceRepository :  IPriceRepository
+    public class MockPriceRepository : IPriceRepository
     {
-        private static List<Price> database = new();
+        private List<Price> database = new();
         public Task<int> Add(Price item)
         {
             database.Add(item);

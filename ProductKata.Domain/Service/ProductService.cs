@@ -34,7 +34,8 @@ namespace ProductKata.Domain.Service
         private async Task<Price> GetPrice(int productId, string login)
         {
             Price price = await unitOfWork.Price.GetByProductId(productId);
-            if (string.IsNullOrEmpty(login))
+  
+            if (!string.IsNullOrEmpty(login) && price != null)
             {
                 price = await GetReductedPrice(productId, login, price);
             }
@@ -48,7 +49,7 @@ namespace ProductKata.Domain.Service
             double reduction = 0;
             if (user != null)
             {
-                IEnumerable<SellHistory> history = await unitOfWork.SellHistory.GetByUserId(user.Id);
+                List<SellHistory> history = (await unitOfWork.SellHistory.GetByUserId(user.Id)).ToList();
                 if (history.Where(x => dateHelper.AfterSixMonths(x.Date)).Count() > 3)
                 {
                     reduction = 10;
@@ -62,11 +63,10 @@ namespace ProductKata.Domain.Service
             Price updatedPrice = new()
             {
                 ProductId = productId,
-                CurrentPrice = price.CurrentPrice * (100 - reduction),
+                CurrentPrice = price.CurrentPrice * (100 - reduction) / 100,
                 UpdateDate = price.UpdateDate
             };
-            price = updatedPrice;
-            return price;
+            return updatedPrice;
         }
 
         private Task<ProductCatalog> GetProductById(int id)
