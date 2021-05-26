@@ -29,3 +29,9 @@ Exploite ProductKata.Domain et gère l'injection des dépendances
 
 ### ProductKata.UnitTests
 Contient des tests unitaires sur la couche ProductKata.Domain
+
+
+## Comment lancer ?
+- Ouvrir le fichier .sln avec Visual Studio
+- Lancer IIS Express
+
